@@ -1,0 +1,7 @@
+<form action="{% url 'main:index' %}" method="post">
+{% csrf_token %}
+
+    <input type="text" name="email" id="email"/>
+    
+<input type="submit" value="Join" name="Join"/>
+</form>
