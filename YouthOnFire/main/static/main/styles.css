@@ -110,6 +110,15 @@ p {
 }
 
 
+#signup_btn_div {
+	z-index: 9999;
+	position: absolute;
+	top: 220px;
+	left: 100px;
+}
+
+
+
 #form_container {
 	padding: 15px;
 	background-color: #8B0000;
@@ -130,7 +139,8 @@ p {
 
 
 #main_content {
-	padding: 30px 0px 30px 0px;
+	padding: 10px 0px 30px 0px;
+	clear: both;
 }
 
 table {
@@ -145,11 +155,7 @@ label {
 
 }
 
-input {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
+
 
 .join_button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
@@ -167,6 +173,11 @@ input {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #b23e35;
+
+-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
 }.join_button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8f2727), color-stop(1, #b06365) );
 	background:-moz-linear-gradient( center top, #8f2727 5%, #b06365 100% );
@@ -200,10 +211,11 @@ input {
 #slideshow{
     background-color:#F5F5F5;
     border:1px solid #FFFFFF;
-    margin:115px auto 0;
+    margin:100px auto 0;
     position:relative;
-    width:480px;
-    height:240px;
+    width:400px;
+    height:200px;
+
 
     -moz-box-shadow:0 0 22px #111;
     -webkit-box-shadow:0 0 22px #111;
