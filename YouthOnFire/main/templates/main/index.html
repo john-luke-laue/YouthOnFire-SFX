@@ -1,8 +1,18 @@
 {% load staticfiles %}
 
+<!DOCTYPE html>
 <html>
 <head>
+	<title>YouthOnFire</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 	<link rel="stylesheet" href="{% static "main/styles.css" %}"/>
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="{% static "main/slideshow-script.js" %}"></script>
+<script src="{% static "main/autoadvance.js" %}"></script>
 </head>
 
 
@@ -12,8 +22,11 @@
 	
 
 	<div class="logo">
-		<img src="{% static "main/icons/yof-icon.png" %}" alt="Youth On Fire">
-		<h1>Youth On <span style="color: red">Fire</span>&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color: #404040">{<span style="font-size: 20px; vertical-align:middle">SFX Burbank</span></span></h1>
+		
+		<h1>Youth On <span style="color: red">Fire</span><span style="color: #404040"> {<span style="font-size: 20px; vertical-align:middle">SFX Burbank</span></span></h1>
+
+<!--<img width="130" height="125" src="{% static "main/icons/yof-icon.png" %}" alt="Youth On Fire">-->
+
 	</div>
 
 	<nav>
@@ -24,9 +37,25 @@
       		<li><a href="/calendar">Calendar</a></li>
       	</ul>
 	</nav>
-</br>
-</br>
-</br>
+
+<div id="slideshow">
+
+    <ul class="slides">
+        <li><img src="{% static "main/icons/yof-icon.png" %}" /></li>
+        <li><img src="{% static "main/icons/facebook-icon.png" %}" width="50" height="50" alt="Turrimetta Beach" /></li>
+    </ul>
+
+    <span class="arrow previous"></span>
+    <span class="arrow next"></span>
+</div>
+
+
+
+
+
+
+
+
 
 <div id="main_content">
 
@@ -40,7 +69,7 @@
 			</td>
 			<td style="width: 33%; padding: 0 12px 0 12px; vertical-align: top">
 
-	<h3 >Low Commitment</h3>
+	<h3>Serve at Your Own Pace	</h3>
 	<p>We realize people want to help but aren't always available to commit lots of time. So, we don't force you to make long-term commitments or attend countless meetings. We'll send out event information via our website, email, and social media platforms; all you have to do is show up and be ready to serve.</p>
 
 			</td>
@@ -115,9 +144,6 @@
       	<img src="{% static "main/icons/instagram-icon.png" %}" alt="Follow us on Twitter">
       </div>
 
-      	<div id="jl_info">
-      		Site by John-Luke Laue
-      	</div>
 
 </footer>
 
