@@ -1,7 +1,125 @@
+{% load staticfiles %}
+
+<html>
+<head>
+	<link rel="stylesheet" href="{% static "main/styles.css" %}"/>
+</head>
+
+
+
+<div id="bodycontainer">
+<body style="font-family: 'Segoe UI', Arial, sans-serif">
+	
+
+	<div class="logo">
+		<img src="{% static "main/icons/yof-icon.png" %}" alt="Youth On Fire">
+		<h1>Youth On <span style="color: red">Fire</span>&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color: #404040">{<span style="font-size: 20px; vertical-align:middle">SFX Burbank</span></span></h1>
+	</div>
+
+	<nav>
+		<ul>
+      		<li><a href="/">Home</a></li>
+      		<li><a href="/about">About Us</a></li>
+      		<li><a href="/events">Events</a></li>
+      		<li><a href="/calendar">Calendar</a></li>
+      	</ul>
+	</nav>
+</br>
+</br>
+</br>
+
+<div id="main_content">
+
+	<table>
+		<tr>
+			<td style="width: 33%; padding: 0 12px 0 12px; vertical-align: top">
+
+	<h3>Works of Charity</h3>
+	<p>Our focus is serving the poor, needy, lonely, homeless, and vulnerable of Los Angeles. While we realize the importance and value of prayer and catechism, our mission is centered around service and charity. <i>Ubi caritas et amor, Deus ibi est.</i></p>
+
+			</td>
+			<td style="width: 33%; padding: 0 12px 0 12px; vertical-align: top">
+
+	<h3 >Low Commitment</h3>
+	<p>We realize people want to help but aren't always available to commit lots of time. So, we don't force you to make long-term commitments or attend countless meetings. We'll send out event information via our website, email, and social media platforms; all you have to do is show up and be ready to serve.</p>
+
+			</td>
+			<td style="width: 33%; padding: 0 12px 0 12px; vertical-align: top">	
+
+	<h3>Inclusive Community</h3>
+	<p>We accept all who have a willing heart. We are a Catholic based community here at Saint Francis Xavier Burbank, but we welcome all faiths and people of no faith. We are primarily oriented toward youth and young adults, but we welcome anyone who wants to help. So, please invite all your friends!</p>
+
+			</td>
+		</tr>
+	</table>
+
+
+
+<table style="margin: 0px auto; padding: 28px 105px 0 0">
+	<tr>
+		<td style="padding: 10px">
+<div id="sign_container">
+	<h1 style="margin: 0px"><span style="font-size: 30px; vertical-align:middle">Sign up today!</span> <span style="color: #404040; font-size: 50px">}</span></h1>
+</div>
+
+		<li style="font-size: 12px; list-style-type: none;">We send occasional emails; that's it.</li>
+		<li style="font-size: 12px; list-style-type: none;"><a href="/unsubscribe">Unsubscribe</a> anytime.</li>
+
+
+		</td>
+		<td style="padding: 10px">
+
+<div id="form_container">
+	<table>
 <form action="{% url 'main:index' %}" method="post">
 {% csrf_token %}
-
+	<tr>
+		<td>
+	<label>First Name:</label>  
+		</td><td>
+    <input type="text" name="fname" id="fname"/>
+		</td></tr><tr><td>
+    <label>Last Name:</label>  
+    	</td><td>
+    <input type="text" name="lname" id="lname"/>
+		</td></tr><tr><td>
+    <label>Email:</label>  
+    	</td><td>
     <input type="text" name="email" id="email"/>
-    
-<input type="submit" value="Join" name="Join"/>
+		</td></tr><tr><td>
+	<input class="join_button" type="submit" value="Join Us!" name="Join"/>
+			</td></tr>
 </form>
+	</table>
+</div>
+		</td>
+
+		</tr>
+	</table>
+
+
+</div> <!-- #maincontent -->
+
+
+
+
+</body>
+</div> <!-- #bodycontainer -->
+
+
+<footer>
+
+	  <div id="footer_social">
+      	<img src="{% static "main/icons/facebook-icon.png" %}" alt="Like us on Facebook">
+      	<img src="{% static "main/icons/twitter-icon.png" %}" alt="Follow us on Twitter">
+      	<img src="{% static "main/icons/instagram-icon.png" %}" alt="Follow us on Twitter">
+      </div>
+
+      	<div id="jl_info">
+      		Site by John-Luke Laue
+      	</div>
+
+</footer>
+
+
+</html>
