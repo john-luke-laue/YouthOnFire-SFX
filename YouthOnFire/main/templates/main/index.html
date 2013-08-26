@@ -21,7 +21,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-   		$('#signup_btn_div').localScroll({duration:800});
+   		$('#signup_link_div').localScroll({duration:800});
 	});
 </script>
 
@@ -42,7 +42,7 @@
 
 	</div>
 
-<div>
+<div style="overflow: auto; width: 500px">
 	<nav>
 		<ul>
       		<li><a href="/">Home</a></li>
@@ -53,26 +53,36 @@
 	</nav>
 </div>
 
+<div id="outer_2">
 
-
-
-<div id="signup_btn_div">
+<table id="main_table">
+	<tr>
+		<td style="width: 20%">
+<div id="signup_link_div">
 <h3 style="color: grey">Come Grow With Us!</h3>
 <a href="#LinkToSignUp">Sign Up!</a>
 </div>
+		</td>
+		<td style="vertical-align: top; width: 80%; padding: 25px 0 0 95px">
 
-
+<div id="second_link_div" >
 <div id="slideshow">
 
     <ul class="slides">
-        <li><img src="{% static "main/icons/yof-icon.png" %}" width="100" height="100"/></li>
-        <li><img src="{% static "main/icons/facebook-icon.png" %}" width="50" height="50" alt="Turrimetta Beach" /></li>
+        <li><img src="{% static "main/slideshow/SFXstairs.jpg" %}" width="400" height="200"/></li>
+        <li><img src="{% static "main/icons/facebook-icon.png" %}" width="400" height="200" alt="Turrimetta Beach" /></li>
     </ul>
 
     <span class="arrow previous"></span>
     <span class="arrow next"></span>
 </div>
+</div>
+		</td>
+		</tr>
+	</table>
 
+
+</div>
 
 
 
@@ -108,7 +118,7 @@
 
 
 
-<table style="margin: 0px auto; padding: 28px 105px 0 0">
+<table style="margin: 0px auto; padding: 24px 105px 0 0">
 	<tr>
 		<td style="padding: 10px">
 <div id="sign_container">
