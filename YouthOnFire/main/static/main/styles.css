@@ -334,3 +334,63 @@ label {
 #slideshow .next:hover{ background-position:right bottom;}
 
 
+
+
+/* most (not all) of event page styles will be here */
+
+#event_div {
+	margin: 15px 0 0 0;
+	padding: 10px 5px 10px 25px;
+
+
+	max-width: 600px;
+	overflow: hidden;
+
+	background-color: #A3A3A3;
+	-moz-border-radius-bottomright: 50px;
+	border-bottom-right-radius: 50px;
+
+	-moz-border-radius-topleft: 50px;
+	border-top-left-radius: 50px;
+
+
+
+}
+
+#event_div h3 {
+	margin: 0;
+	font-size: 25px;
+}
+
+#event_div ul {
+	margin: 2px;
+	font-size: 12px;
+	list-style-type: none;
+}
+
+#event_div_content {
+	padding: 11px 10px 5px 0;
+}
+
+#event_div_content p {
+	margin: 3px;
+}
+
+#event_div_content img {
+	padding-right: 13px;
+}
+
+/* end event styles */
+
+
+
+
+
+
+
+
+
+
+
+
+

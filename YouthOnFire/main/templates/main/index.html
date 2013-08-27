@@ -1,9 +1,11 @@
 {% load url from future %}
 {% load staticfiles %}
+{% load dajaxice_templatetags %}
 
 <!DOCTYPE html>
 <html>
 <head>
+	{% dajaxice_js_import %}
 	<title>YouthOnFire</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,6 +27,11 @@
 	});
 </script>
 
+<script type="text/javascript">
+function my_js_callback(data){
+    alert(data.message);
+}
+</script>
 
 </head>
 
@@ -45,7 +52,7 @@
 <div style="overflow: auto; width: 500px">
 	<nav>
 		<ul>
-      		<li><a href="/">Home</a></li>
+      		<li><a href="/home">Home</a></li>
       		<!--<li><a href="/about">About Us</a></li>-->
       		<li><a href="/events">Events</a></li>
       		<li><a href="/calendar">Calendar</a></li>
@@ -166,6 +173,7 @@
 </div> <!-- #maincontent -->
 
 
+	<input type="submit" onclick="Dajaxice.main.sayhello(my_js_callback);"/>
 
 
 </body>
