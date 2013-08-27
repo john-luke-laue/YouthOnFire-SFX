@@ -10,7 +10,9 @@
 
 }
 
-
+html {
+	height: 100%;
+}
 
 body {
 
@@ -31,6 +33,7 @@ background-image: -webkit-gradient(
 
 margin: 0;
 padding: 0;
+height: 100%;
 
 }
 
@@ -83,15 +86,29 @@ nav ul li a:hover {
 
 #bodycontainer {
  margin: 30px 50px 0 50px;
+
+ 	min-height: 100%;
+	margin-bottom: -58px;
+	position: relative;
+
 }
+
+
+.clearfooter {
+	height: 58px;
+	clear: both;
+
+}
+
+
 
 footer {
 	background-color: #3B3B3B;
-	float: left;
-	min-width:100%;
-	position: absolute;
-	margin: 0;
-	padding: 0;
+
+
+	position: relative;
+
+	height: 67px;
 }
 
 
@@ -166,11 +183,21 @@ p {
 
 }
 
+#main_content_about {
+	padding: 8px 0px 300px 0px;
+	clear: both;
+}
+
+
 
 #main_content {
 	padding: 8px 0px 30px 0px;
 	clear: both;
 }
+
+
+
+
 
 table {
 	align: center;

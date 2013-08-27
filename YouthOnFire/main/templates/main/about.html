@@ -1,0 +1,64 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>YouthOnFire</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="{% static "main/styles.css" %}"/>
+
+</head>
+
+<div id="bodycontainer" style="font-family: 'Segoe UI', Arial, sans-serif">
+<body>
+
+	<div class="logo">
+		
+		<h1>Youth On <span style="color: red">Fire</span><span style="color: #404040"> {<span style="font-size: 20px; vertical-align:middle">SFX Burbank</span></span></h1>
+
+<!--<img width="130" height="125" src="{% static "main/icons/yof-icon.png" %}" alt="Youth On Fire">-->
+
+	</div>
+
+<div style="overflow: auto; width: 500px">
+	<nav>
+		<ul>
+      		<li><a href="/">Home</a></li>
+      		<!--<li><a href="/about">About Us</a></li>-->
+      		<li><a href="/events">Events</a></li>
+      		<li><a href="/calendar">Calendar</a></li>
+      	</ul>
+	</nav>
+</div>
+
+
+
+<div id="main_content">
+
+
+
+</div>
+
+
+
+
+
+</body>
+<div class="clearfooter"></div>
+</div>
+
+
+<footer>
+
+	  <div id="footer_social">
+      	<img src="{% static "main/icons/facebook-icon.png" %}" alt="Like us on Facebook">
+      	<img src="{% static "main/icons/twitter-icon.png" %}" alt="Follow us on Twitter">
+      	<img src="{% static "main/icons/instagram-icon.png" %}" alt="Follow us on Twitter">
+      </div>
+
+
+</footer>
+
+</html>
