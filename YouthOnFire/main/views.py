@@ -16,7 +16,14 @@ from dajaxice.decorators import dajaxice_register
 
 
 def index(request):
-	return render(request, 'main/index.html',  {'form':EmailForm()})
+	start_date = date.today()
+	end_date = datetime.date(2050, 12, 31) #a sufficiently far away date
+	latest_events_list = Event.objects.filter(event_date__range=(start_date, end_date)).order_by('event_date')[:1] #get the first future event that is closest to today
+	latest_event = Event()
+	if latest_events_list:
+		for event in latest_events_list:
+			latest_event = event
+	return render(request, 'main/index.html',  {'form':EmailForm(), 'latest_event':latest_event}, context_instance=RequestContext(request))
 
 
 def calendar(request):

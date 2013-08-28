@@ -155,6 +155,7 @@ p {
 
 #signup_link_div {
 	width: 190px;
+	padding-left: 12px;
 }
 
 
@@ -256,6 +257,10 @@ label {
 	padding-bottom: 5px;
 }
 
+#footer_social img {
+	padding: 0 7px 0 7px;
+}
+
 
 
 
@@ -339,14 +344,15 @@ label {
 /* most (not all) of event page styles will be here */
 
 #event_div {
-	margin: 15px 0 0 0;
-	padding: 10px 5px 10px 25px;
+	margin: 25px 0 0 0;
+	padding: 20px 5px 20px 25px;
 
 
-	max-width: 600px;
+	max-width: 750px;
 	overflow: hidden;
 
-	background-color: #A3A3A3;
+	border:4px dotted grey; 
+
 	-moz-border-radius-bottomright: 50px;
 	border-bottom-right-radius: 50px;
 
@@ -356,6 +362,7 @@ label {
 
 
 }
+
 
 #event_div h3 {
 	margin: 0;
@@ -383,10 +390,31 @@ label {
 /* end event styles */
 
 
+#contact_errors {
+	text-align: center;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	padding: 10px;
+}
 
 
 
 
+
+
+ a.tooltip {outline:none; } 
+ a.tooltip strong {line-height:30px;} 
+ a.tooltip:hover {text-decoration:none;} 
+ a.tooltip span { z-index:10;display:none; padding:14px 20px; margin-top:60px; margin-left:-160px; width:240px; line-height:16px; } 
+ a.tooltip:hover span { 
+ 	display:inline; 
+ 	position:absolute; 
+ 	border:2px solid #FFF; 
+ 	color:#EEE; 
+ 	background:#000 url('tooltip/css-tooltip-gradient-bg.png') repeat-x 0 0; } 
+ .callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;} 
+
+ /*CSS3 extras*/ 
+ a.tooltip span { border-radius:2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; -moz-box-shadow: 0px 0px 8px 4px #666; -webkit-box-shadow: 0px 0px 8px 4px #666; box-shadow: 0px 0px 8px 4px #666; opacity: 0.8; }
 
 
 
