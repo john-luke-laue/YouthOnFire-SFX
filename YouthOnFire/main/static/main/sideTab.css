@@ -1,5 +1,8 @@
 .sideTabPanel {
 position: absolute;
+
+z-index: 7000;
+
 top: 50px;
 right: 0;
 display: none;
@@ -53,7 +56,7 @@ border-bottom: 1px solid #ffffff;
 
 
 a.sideTabTrigger{
-	z-index: 9999998;
+	z-index: 7000;
 position: absolute;
 text-decoration: none;
 
